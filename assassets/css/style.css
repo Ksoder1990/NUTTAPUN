@@ -1,0 +1,329 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
+.hero-banner {
+  height: 100vh;
+  background: 
+              url('../img/RICHBG.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-shadow: 1px 1px 3px rgba(5, 5, 5, 0. 9);
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.hero-banner .btn-success {
+  background-color: #388e3c;
+  border: none;
+}
+.about-section {
+  background-color: #f1f8e9; /* เขียวอ่อนแนวธรรมชาติ */
+}
+
+.about-section h2 {
+  color: #2e7d32;
+  font-weight: bold;
+}
+.features-section h2 {
+  font-weight: bold;
+}
+
+.features-section img {
+  transition: transform 0.3s ease;
+}
+
+.features-section img:hover {
+  transform: scale(1.05);
+}
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer a:hover {
+  color: #81c784 !important; /* เขียวอ่อนเวลา hover */
+}
+.why-choose-us i {
+  font-size: 3rem;
+}
+.why-choose-us h5 {
+  font-weight: bold;
+  color: #2e7d32;
+}
+.mission-section {
+  background-color: #b8c2adc4; /* เขียวอ่อนแนวธรรมชาติ */
+  overflow: hidden;
+  position: relative;
+}
+
+.particles-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3;
+}
+.nav-btn {
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #2e7d32;
+  color: #fff;
+}
+.custom-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: #2e7d32;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #1b5e20;
+}
+
+.custom-navbar .nav-link {
+  color: #4caf50;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #2e7d32;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.container-relative {
+  position: relative;
+}
+
+.floating-img {
+  width: 120%;           /* ขนาดภาพเป็น % ของ container */
+  max-width: 1080px;     /* ขนาดสูงสุดไม่เกิน */
+  position: absolute;
+  top: -300px;
+  right: 0;
+  z-index: 2;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* ปรับสำหรับมือถือ */
+@media (max-width: 767px) {
+  .floating-img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    box-shadow: none;
+  }
+}
+.floating-img {
+  /* โค้ดเดิม... */
+  transition: transform 0.3s ease; /* ทำให้การขยายลื่นไหล */
+}
+
+.floating-img:hover {
+  transform: scale(1.05); /* ขยายภาพ 5% เมื่อ hover */
+}
+.floating-img {
+  animation: slideInFromRight 0.8s ease forwards;
+}
+body {
+  font-family: 'Kanit', sans-serif;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* หรือใช้ #000 สำหรับดำ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #28a745;
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* แสดงเมนูย่อยเมื่อ hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* ปรับให้ไม่เด้งห่างจากเมนูหลัก */
+}
+
+/* ป้องกันปิดไวเกิน */
+.nav-item.dropdown .dropdown-menu {
+  transition: opacity 0.3s ease;
+}
+/* สีพื้นหลังของเมนูย่อย */
+.dropdown-menu {
+  background-color: #e6f4ea; /* เขียวอ่อน */
+  border: none;
+}
+
+/* สีตอน hover ที่เมนูย่อย */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #40a357; /* เขียวเข้ม */
+  color: white;
+}
+
+
+
+
+/* หน้า 2 Rotary */
+.rotary-hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 15, 40, 0.6); /* ฟิลเตอร์ฟ้าเข้มโปร่ง */
+  z-index: 1;
+}
+
+.rotary-hero-video .content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px;
+}
+.about-rotary-section {
+  background-color: #0d1b2a; /* ฟ้าเข้ม/ดำแบบเรียบหรู */
+  color: #ffffff;
+}
+
+.about-rotary-section h2 {
+  color: #58a6ff; /* ฟ้าอ่อนโดดเด่น */
+  font-weight: bold;
+}
+/* ===== Section: เกี่ยวกับโรตารี่ ===== */
+.about-rotary-section {
+  background-color: #0d1b2a; /* ฟ้าเข้ม/ดำ */
+  color: #ffffff;
+}
+.about-rotary-section h2 {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+/* ===== Section: ภารกิจ ===== */
+.mission-section {
+  background-color: #132c42;
+  color: white;
+}
+.mission-section i {
+  color: #58a6ff;
+}
+.mission-section h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #a5d8ff;
+}
+
+/* ===== Section: Core Values ===== */
+.core-values-section {
+  background-color: #0a192f;
+}
+.core-values-section i {
+  color: #00bcd4;
+}
+.core-values-section h6 {
+  color: #e0f7fa;
+  font-weight: 600;
+}
+
+/* ===== Section: Carousel (กิจกรรม) ===== */
+.owl-carousel .item {
+  padding: 10px;
+}
+.owl-carousel img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.owl-carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Section: CTA (เข้าร่วมกับเรา) ===== */
+.join-section {
+  background: linear-gradient(135deg, #002244, #000000);
+}
+.join-section h2 {
+  font-weight: bold;
+  color: #58a6ff;
+}
+.join-section .btn-outline-info {
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+.join-section .btn-outline-info:hover {
+  background-color: #58a6ff;
+  color: #000;
+}
+
+/* ===== Responsive fix ===== */
+@media (max-width: 768px) {
+  .mission-section i,
+  .core-values-section i {
+    font-size: 2.5rem;
+  }
+}
