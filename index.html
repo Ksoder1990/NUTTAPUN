@@ -1,9 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>เว็บของฉัน</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
 <body>
-  <h1>สวัสดี GitHub Pages</h1>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="assets/img/รอมาใส่.jpg" alt="LOGO" width="100">
+        <i class='bx bx-leaf bx-sm me-2'></i> โว้วววววววว
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    หน้าแรก
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">เมนูย่อย 1</a></li>
+    <li><a class="dropdown-item" href="#">เมนูย่อย 2</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">เมนูย่อย 3</a></li>
+  </ul>
+</li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="#">บริการ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="#">ติดต่อเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="#">หลังไมค์</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Banner -->
+<section class="hero-banner text-white d-flex align-items-center justify-content-center">
+  <div class="text-center" data-aos="fade-up">
+    <h1>ยินดีต้อนรับสู่โลกส่วนตัว</h1>
+    <p class="lead">สร้างอนาคตที่ยั่งยืนด้วยธรรมชาติใบเขียว</p>
+    <a href="#" class="btn btn-success mt-3">เริ่มต้นสำรวจ</a>
+  </div>
+</section>
+<div class="container py-5 container-relative">
+  <div class="row align-items-center">
+    <div class="col-md-6" data-aos="fade-up">
+      <h1 class="text-success">ขุ่มพลังแห่งรถไถทรงพลังยิ่ง</h1>
+      <p data-aos="fade-up" data-aos-delay="200">เราจะทำตามสัญญา ขอเวลาอีกไม่นาน</p>
+      <a href="Rotary.html" class="btn btn-outline-success mt-3">เรียนรู้เพิ่มเติม</a>
+    </div>
+    <div class="col-md-6 d-none d-md-block position-relative" data-aos="fade-left" data-aos-delay="300">
+      <img src="assets/img/KUBOTA.png" class="floating-img" alt="Welcome Image">
+    </div>
+  </div>
+</div>
+   <!-- About Section -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- รูปภาพ -->
+      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+        <img src="assets/img/about.png" alt="เกี่ยวกับเรา" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- ข้อความ -->
+      <div class="col-md-6" data-aos="fade-left">
+        <h2 class="mb-3">เกี่ยวกับ ข่อยเอง</h2>
+        <p>เราคือผู้นำด้านเทคโนโลยีการเกษตร ที่เชื่อมโยงธรรมชาติกับนวัตกรรม เพื่ออนาคตที่ยั่งยืนของเกษตรกรไทย</p>
+        <p>จากเทคโนโลยี IoT, เครื่องจักรอัจฉริยะ ไปจนถึงข้อมูลวิเคราะห์แบบเรียลไทม์ — เราพร้อมพัฒนาเกษตรไทยสู่อนาคต</p>
+        <a href="#" class="btn btn-outline-success mt-3">เรียนรู้เพิ่มเติม</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Features Section -->
+<section class="features-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-success">บริการของเรา</h2>
+      <p class="text-muted">เราให้บริการเพื่อเกษตรกรไทยอย่างแท้จริง</p>
+    </div>
+   <div class="row">
+      <!-- ช่องที่ 1 -->
+      <div class="col-md-4 text-center mb-4" data-aos="zoom-in">
+        <img src="assets/img/feature1.png" alt="ฟีเจอร์ 1" class="img-fluid mb-3 rounded shadow-sm" width="200">
+        <h4>ระบบรดน้ำอัตโนมัติ</h4>
+        <p>ควบคุมผ่านมือถือ ประหยัดน้ำและเวลา</p>
+        <a href="#" class="btn btn-outline-success">ดูเพิ่มเติม</a>
+      </div>
+
+      <!-- ช่องที่ 2 -->
+      <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/feature2.png" alt="ฟีเจอร์ 2" class="img-fluid mb-3 rounded shadow-sm" width="200">
+        <h4>โดรนเกษตรอัจฉริยะ</h4>
+        <p>พ่นปุ๋ย พ่นยา ควบคุมผ่านแอป</p>
+        <a href="#" class="btn btn-outline-success">ดูเพิ่มเติม</a>
+      </div>
+
+      <!-- ช่องที่ 3 -->
+      <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/feature3.png" alt="ฟีเจอร์ 3" class="img-fluid mb-3 rounded shadow-sm" width="200">
+        <h4>ข้อมูลสภาพอากาศ</h4>
+        <p>รู้ล่วงหน้าเพื่อวางแผนการเพาะปลูก</p>
+        <a href="#" class="btn btn-outline-success">ดูเพิ่มเติม</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-success">ทำไมต้องเลือก ฉัน?</h2>
+      <p class="text-muted">เพราะเราเข้าใจเกษตรกรไทยอย่างแท้จริง</p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <i class="bx bx-rocket bx-lg text-success mb-3"></i>
+        <h5>ทันสมัย</h5>
+        <p>เทคโนโลยีใหม่ล่าสุด ช่วยให้เกษตรมีประสิทธิภาพสูงสุด</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="bx bx-support bx-lg text-success mb-3"></i>
+        <h5>บริการจริงใจ</h5>
+        <p>ทีมงานพร้อมช่วยเหลือตั้งแต่ต้นจนจบ</p>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="bx bx-check-shield bx-lg text-success mb-3"></i>
+        <h5>เชื่อถือได้</h5>
+        <p>มีเกษตรกรทั่วไทยเลือกใช้บริการกับเราแล้วกว่า 10,000 ราย</p>
+      </div>
+    </div>
+  </div>
+  <section class="mission-section position-relative text-white py-5">
+  <!-- พื้นหลัง Particle -->
+  <div id="particles-mission" class="particles-bg"></div>
+
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row align-items-center">
+      <!-- ข้อความ -->
+      <div class="col-md-6 order-md-1" data-aos="fade-right">
+        <h2 class="mb-3">พันธกิจของเรา</h2>
+        <p>เรามุ่งมั่นที่จะยกระดับคุณภาพชีวิตของเกษตรกรไทย ด้วยการนำเทคโนโลยีสมัยใหม่มาใช้ให้เกิดประโยชน์สูงสุด</p>
+        <p>ฉั๋น เชื่อว่าความรู้และนวัตกรรม คือกุญแจสู่อนาคตของภาคเกษตรกรรม</p>
+        <a href="#" class="btn btn-outline-success mt-3">อ่านเพิ่มเติม</a>
+      </div>
+
+      <!-- ภาพ -->
+      <div class="col-md-6 order-md-2 text-center" data-aos="fade-left">
+        <img src="assets/img/mission.jpg" alt="พันธกิจของเรา" class="img-fluid rounded shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-success">เสียงจากลูกค้าของเรา</h2>
+      <p class="text-muted">ความประทับใจที่ได้รับจากเกษตรกรทั่วไทย</p>
+    </div>
+    <div class="row">
+      <!-- รีวิว 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="p-4 bg-white shadow-sm rounded text-center">
+          <img src="assets/img/customer1.png" class="rounded-circle mb-3" alt="ลุงสมชาย" width="100" height="100">
+          <p>"ตั้งแต่ใช้บริการ ทุกอย่างสะดวกขึ้นเยอะครับ ประหยัดแรงและเวลา!"</p>
+          <h6 class="mt-3">– ลุงสมชาย</h6>
+        </div>
+      </div>
+
+      <!-- รีวิว 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 bg-white shadow-sm rounded text-center">
+          <img src="assets/img/customer2.png" class="rounded-circle mb-3" alt="ป้าน้อย" width="100" height="100">
+          <p>"โดรนพ่นยาคือดีมาก ใช้งานง่าย บริการหลังการขายก็ดีค่ะ"</p>
+          <h6 class="mt-3">– ป้าน้อย</h6>
+        </div>
+      </div>
+
+      <!-- รีวิว 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 bg-white shadow-sm rounded text-center">
+          <img src="assets/img/customer3.png" class="rounded-circle mb-3" alt="คุณอดุลย์" width="100" height="100">
+          <p>"ข้อมูลพยากรณ์อากาศที่ให้แม่นยำมากครับ ช่วยให้วางแผนได้ดีขึ้น"</p>
+          <h6 class="mt-3">– คุณอดุลย์</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+  <div class="container text-center">
+    <h5>ฉั๋น</h5>
+    <p>เทคโนโลยีเกษตรเพื่ออนาคต</p>
+    <div class="mb-3">
+      <a href="#" class="text-white me-3"><i class="bx bxl-facebook-square bx-md"></i></a>
+      <a href="#" class="text-white"><i class="bx bxl-instagram-alt bx-md"></i></a>
+    </div>
+    <small>&copy; 2025 ฉั๋น. สงวนลิขสิทธิ์.</small>
+  </div>
+ </footer>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <!-- Your Custom JS -->
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    AOS.init(); // เปิดใช้งาน AOS animation
+  </script>
+  <script 
+    src="assets/js/aos.js">
+  </script>
 </body>
 </html>
